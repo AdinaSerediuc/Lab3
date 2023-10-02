@@ -41,8 +41,6 @@ namespace Lab3
 
             VerificaNumerePrime(vector);
 
-
-
         }
 
         static int[] CitesteVector(int n)
@@ -132,6 +130,35 @@ namespace Lab3
                 dreapta--;
             }
         }
+        static bool EsteNumarPrim(int numar)
+        {
+            if (numar <= 1)
+            {
+                return false;
+            }
 
+            for (int i = 2; i <= Math.Sqrt(numar); i++)
+            {
+                if (numar % i == 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        static void VerificaNumerePrime(int[] vector)
+        {
+            Console.WriteLine("Numerele prime din vector sunt:");
+            foreach (var numar in vector)
+            {
+                if (EsteNumarPrim(numar))
+                {
+                    Console.Write(numar + " ");
+                }
+            }
+            Console.WriteLine();
+        }
     }
 }
