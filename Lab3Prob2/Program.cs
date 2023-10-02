@@ -8,6 +8,10 @@ namespace Lab3Prob2
     {
         static void Main(string[] args)
         {
+            /*
+             * Ex 2
+             Scrieti un program care va afisa pozitia unui substring intr un string, ambele siruri de caractere fiind citite de la tastatura
+            */
         }
     }
 }
